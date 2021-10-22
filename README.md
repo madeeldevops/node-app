@@ -6,7 +6,7 @@ I had to change this line from buildspec.yml as it is no longer supported in cli
 - $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email)
 instead use the updated version below
 
-aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin 966771679518.dkr.ecr.us-east-1.amazonaws.com/docker2ecr
+- aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin 966771679518.dkr.ecr.us-east-1.amazonaws.com/docker2ecr
 
-withouth $()
+Do not add $() in new command.
 
