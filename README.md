@@ -1,5 +1,5 @@
 # docker-to-ecr
-This repo is used for pushing docker image to aws ecr via aws codebuild using github
+This repo is used for pushing docker image to aws ecr using aws codebuild with github
 Don't forget to add trigger on push in codebuild
 
 I had to change this line from buildspec.yml as it is no longer supported in cli v2
