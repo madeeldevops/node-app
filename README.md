@@ -1,4 +1,3 @@
-# docker-to-ecr
 This repo is used for pushing docker image to aws ecr using aws codebuild with github
 When building is started the codebuild read buildspec.yml file and create a docker image of the code, which is then published to ecr.
 Don't forget to add trigger/webhook on push in codebuild
@@ -14,4 +13,9 @@ instead use the updated version below
 `
 
 Do not add $() in new command.
+
+------------
+
+You can perform the following with this repo also : 
+- CICD Pipeline using AWS CodePipeline from Github to ECS Tasks with load balancing across containers.
 
