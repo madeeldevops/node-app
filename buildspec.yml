@@ -6,8 +6,8 @@ phases:
     commands:
       - echo Logging in to Amazon ECR...
       - aws --version
-      - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin 570707499514.dkr.ecr.us-east-1.amazonaws.com/thisrepowillsavecontainers
-      - REPOSITORY_URI=570707499514.dkr.ecr.us-east-1.amazonaws.com/thisrepowillsavecontainers
+      - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin 430571684259.dkr.ecr.us-east-1.amazonaws.com/adeelfirstregistry
+      - REPOSITORY_URI=430571684259.dkr.ecr.us-east-1.amazonaws.com/adeelfirstregistry
       - COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
       - IMAGE_TAG=build-$(echo $CODEBUILD_BUILD_ID | awk -F":" '{print $2}')
   build:
