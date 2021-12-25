@@ -1,6 +1,4 @@
-FROM public.ecr.aws/lambda/nodejs:latest
-
-
+FROM node:carbon
 
 # Create app directory
 WORKDIR /usr/src/app
